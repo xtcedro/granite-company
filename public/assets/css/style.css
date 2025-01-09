@@ -1,3 +1,181 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* White background */
+    color: #000000; /* Black text for readability */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Black and Red Gradient Titles */
+h1, h2, h3 {
+    background: linear-gradient(135deg, #000000, #990000, #FF0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Header Titles */
+.header-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #000000, #990000, #FF0000); /* Black to red gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle black shadow for depth */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #FFFFFF; /* White for nav background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom: 2px solid #FF0000; /* Red border at the bottom */
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.4); /* Subtle red shadow for depth */
+}
+
+nav a {
+    color: #000000; /* Black text for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem; /* Padding for better spacing */
+    border-radius: 5px; /* Smooth edges */
+}
+
+nav a:hover {
+    color: #FFFFFF; /* White text on hover */
+    background-color: #FF0000; /* Red background on hover */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center-align the links */
+    align-items: center;
+    gap: 2rem; /* Space between links */
+    background-color: #FFFFFF; /* White background */
+    padding: 1rem 0;
+    border-bottom: 2px solid #FF0000; /* Red border at the bottom */
+    position: relative; /* For any potential positioning tweaks */
+    z-index: 10; /* Ensures it stays on top */
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.2); /* Subtle red shadow for depth */
+}
+
+/* Navigation Links */
+.navbar a {
+    color: #000000; /* Black text for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded edges for links */
+}
+
+/* Hover Effect for Links */
+.navbar a:hover {
+    color: #FFFFFF; /* White text on hover */
+    background-color: #FF0000; /* Red background on hover */
+}
+
+/* Active Link Styling */
+.navbar a.active {
+    color: #000000; /* Black text for active link */
+    background-color: transparent; /* No background for active link */
+    border-bottom: 2px solid #FF0000; /* Red underline for active state */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #FFFFFF; /* White for hero background */
+    color: #000000; /* Black text */
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #FF0000; /* Red text for paragraphs */
+}
+
+.hero-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #000000, #990000, #FF0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Blockquote Styling */
+blockquote {
+    font-style: italic;
+    background-color: #F5F5F5; /* Light gray background */
+    padding: 1.5rem;
+    border-left: 5px solid #FF0000; /* Red border */
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 2rem auto;
+    color: #000000; /* Black text */
+    max-width: 700px;
+}
+
+/* Hero Quote Styling */
+.hero-quote {
+    font-style: italic;
+    font-size: 1.5rem; /* Slightly larger font for emphasis */
+    color: #FF0000; /* Red text */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    padding: 1.5rem;
+    border-left: 5px solid #FF0000; /* Red border on the left */
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
+
+.hero-quote em {
+    color: #FF0000; /* Red color for emphasized text */
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.hero-quote::before {
+    content: '“'; /* Opening quotation mark */
+    font-size: 2rem;
+    color: #FF0000; /* Red color */
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.hero-quote::after {
+    content: '”'; /* Closing quotation mark */
+    font-size: 2rem;
+    color: #FF0000; /* Red color */
+    margin-left: 5px;
+    vertical-align: bottom;
+}
+
 /* Mobile View Styling (max-width: 767px) */
 @media (max-width: 480px) {
     body {
