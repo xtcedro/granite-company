@@ -605,7 +605,7 @@ html {
 }
 
 .legal-links a:hover {
-    color: #FF0000; /* Red text color on hover */
+    color: #000000; /* Black text color on hover */
     text-decoration: underline; /* Adds underline on hover */
 }
 
